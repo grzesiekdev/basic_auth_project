@@ -7,10 +7,10 @@ var path = require('path');
 // przygotowujemy do uruchomienia server node
 const app = express();
 
-// funkcja służąca do autentykacji usera. przyjmuje 3 parametry:
+// funkcja służąca do uwierzytelnienia usera. przyjmuje 3 parametry:
 // req: request(wraz z nagłówkami) pobrany z serwera
 // res: response, odpowiedź kierowana do użytkownika
-// next: funkcja służąca do dawania wykonywania konkretnej akcji po zakończeniu działania danego middleware (np zwracanie użytkownikowi kodu 401)
+// next: funkcja służąca do wykonywania konkretnej akcji po zakończeniu działania danego middleware (np zwracanie użytkownikowi kodu 401)
 function authentication(req, res, next) {
 
     // pobranie nagłówków
